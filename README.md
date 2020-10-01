@@ -18,7 +18,7 @@
 
 1. Azure Dev Test Labs作成
 2. VM作成(Windows server)
-3. VMが出来たら，RDPで入る
+3. VMが出来たら，RDP(リモートデスクトップ)でVMの操作
 4. `IIS`をインストール
 5. `.NET Core`ホスティングバンドルのインストール
 6. `Web Deploy`のインストール
