@@ -305,7 +305,7 @@ Blazor Serverを選択します．
 
 ![](img/58_m.png)
 
-以下のファイルをVM（Windows Server）へアタッチして，コピーしていきます．
+以下のフォルダをVM（Windows Server）へアタッチして，コピーしていきます．
 ![](img/59_m.png)
 
 
