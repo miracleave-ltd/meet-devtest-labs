@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>8. Web Deployのインストール · GitBook</title>
+        <title>8. VMのDNSを構成する · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -120,7 +120,7 @@
                 <a href="index_2.html">
             
                     
-                    2. ざっくりとした流れ
+                    2. DevTest Labs作成
             
                 </a>
             
@@ -133,7 +133,7 @@
                 <a href="index_3.html">
             
                     
-                    3. DevTest Labs作成
+                    3. DevTest LabsにVMを作成
             
                 </a>
             
@@ -146,7 +146,7 @@
                 <a href="index_4.html">
             
                     
-                    4. DevTest LabsにVMを作成
+                    4. VMに接続する
             
                 </a>
             
@@ -159,7 +159,7 @@
                 <a href="index_5.html">
             
                     
-                    5. VMに接続する
+                    5. IISの設定を行う
             
                 </a>
             
@@ -172,7 +172,7 @@
                 <a href="index_6.html">
             
                     
-                    6. IISの設定を行う
+                    6. .NET Coreのインストール
             
                 </a>
             
@@ -185,7 +185,7 @@
                 <a href="index_7.html">
             
                     
-                    7. .NET Coreのインストール
+                    7. Web Deployのインストール
             
                 </a>
             
@@ -198,7 +198,7 @@
                 <a href="index_8.html">
             
                     
-                    8. Web Deployのインストール
+                    8. VMのDNSを構成する
             
                 </a>
             
@@ -211,20 +211,7 @@
                 <a href="index_9.html">
             
                     
-                    9. VMのDNSを構成する
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11" data-path="index_10.html">
-            
-                <a href="index_10.html">
-            
-                    
-                    10. Blazor Serverアプリを作成する
+                    9. Blazor Serverアプリを作成する
             
                 </a>
             
@@ -233,12 +220,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1" data-path="index_10_mac.html">
+        <li class="chapter " data-level="1.10.1" data-path="index_9_mac.html">
             
-                <a href="index_10_mac.html">
+                <a href="index_9_mac.html">
             
                     
-                    10.1. Macの場合
+                    9.1. Macの場合
             
                 </a>
             
@@ -246,12 +233,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="index_10_windows.html">
+        <li class="chapter " data-level="1.10.2" data-path="index_9_windows.html">
             
-                <a href="index_10_windows.html">
+                <a href="index_9_windows.html">
             
                     
-                    10.2. Windowsの場合
+                    9.2. Windowsの場合
             
                 </a>
             
@@ -294,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >8. Web Deployのインストール</a>
+        <a href=".." >8. VMのDNSを構成する</a>
     </h1>
 </div>
 
@@ -309,18 +296,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="8-web-deploy&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">8. Web Deploy&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h1>
-<p>&#x4ECA;&#x5EA6;&#x306F;Visual Studio&#x304B;&#x3089;Azure&#x306B;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3092;&#x7C21;&#x7565;&#x5316;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;Web Deploy&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><a href="https://www.microsoft.com/ja-jp/download/details.aspx?id=43717" target="_blank">&#x3053;&#x3061;&#x3089;</a>&#x306E;URL&#x3092;WindowsServer&#x306E;IE&#x3078;&#x30B3;&#x30D4;&#x30DA;&#x3057;&#x3066;&#x79FB;&#x52D5;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x9762;&#x3067;&#x306E;&#x5236;&#x9650;&#x3067;&#x753B;&#x9762;&#x304C;&#x5D29;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#xFF0C;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x51FA;&#x6765;&#x308B;&#x306E;&#x3067;&#x4EE5;&#x4E0B;&#x306E;64bit&#x5074;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/42.png" alt=""></p>
-<p>&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;<code>WebDeoloy_amd64_ja-JP.msi</code>&#x3092;&#x30C0;&#x30D6;&#x30EB;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x4EE5;&#x4E0B;&#x306E;&#x901A;&#x308A;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x203B;&#x6A19;&#x6E96;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3067;&#x306F;&#x306A;&#x3044;&#x3053;&#x3068;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
-<p><img src="img/43.png" alt="">
-<img src="img/44.png" alt="">
-<img src="img/45.png" alt="">
-<img src="img/46.png" alt="">
-<img src="img/47.png" alt=""></p>
-<p>&#x4EE5;&#x964D;&#x306F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x306A;&#x3044;&#x306E;&#x3067;<strong>IE</strong>&#x3092;&#x958B;&#x304D;&#xFF0C;<strong>Internet options</strong>&#x3092;&#x623B;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/48.png" alt=""></p>
+                                <h1 id="8-vm&#x306E;dns&#x3092;&#x69CB;&#x6210;&#x3059;&#x308B;">8. VM&#x306E;DNS&#x3092;&#x69CB;&#x6210;&#x3059;&#x308B;</h1>
+<p><strong>Azure Portal</strong>&#x304B;&#x3089;<strong>Virtual Machines</strong>&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;VM&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;DNS&#x540D;&#x306E;&#x69CB;&#x6210;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#xFF0E;</p>
+<p><img src="img/49.png" alt=""></p>
+<p><strong>Visual Studio</strong>&#x304B;&#x3089;&#x767A;&#x884C;&#x3059;&#x308B;&#x3068;&#x304D;&#x306B;DNS&#x3067;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x51FA;&#x6765;&#x306A;&#x3044;&#x3068;&#x99C4;&#x76EE;&#x306A;&#x306E;&#x3067;&#xFF0C;&#x4EFB;&#x610F;&#x306E;DNS&#x540D;&#x3092;&#x4ED8;&#x3051;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;<br><strong>&#x4F5C;&#x6210;&#x3057;&#x305F;VM&#x306E;&#x30DE;&#x30B7;&#x30F3;&#x540D;</strong>&#x304C;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x304F;&#x3066;&#x826F;&#x3044;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#xFF0E;&#x5909;&#x66F4;&#x3057;&#x305F;&#x3089;<strong>&#x4FDD;&#x5B58;</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x5272;&#x308A;&#x5F53;&#x3066;&#x306F;&#x52D5;&#x7684;&#x3068;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x304C;&#xFF0C;VM&#x304C;&#x518D;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x3082;DNS&#x3067;&#x7D10;&#x4ED8;&#x304F;&#x306E;&#x3067;&#x554F;&#x984C;&#x306A;&#x3044;&#x3067;&#x3059;&#xFF0E;</p>
+<p><img src="img/50.png" alt=""></p>
 
                                 
                                 </section>
@@ -348,12 +328,12 @@
 
             
                 
-                <a href="index_7.html" class="navigation navigation-prev " aria-label="Previous page: 7. .NET Coreのインストール">
+                <a href="index_7.html" class="navigation navigation-prev " aria-label="Previous page: 7. Web Deployのインストール">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="index_9.html" class="navigation navigation-next " aria-label="Next page: 9. VMのDNSを構成する">
+                <a href="index_9.html" class="navigation navigation-next " aria-label="Next page: 9. Blazor Serverアプリを作成する">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -364,7 +344,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8. Web Deployのインストール","level":"1.9","depth":1,"next":{"title":"9. VMのDNSを構成する","level":"1.10","depth":1,"path":"devtestlabs/index_9.md","ref":"devtestlabs/index_9.md","articles":[]},"previous":{"title":"7. .NET Coreのインストール","level":"1.8","depth":1,"path":"devtestlabs/index_7.md","ref":"devtestlabs/index_7.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_8.md","mtime":"2020-10-01T16:35:48.473Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-01T17:38:08.229Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8. VMのDNSを構成する","level":"1.9","depth":1,"next":{"title":"9. Blazor Serverアプリを作成する","level":"1.10","depth":1,"path":"devtestlabs/index_9.md","ref":"devtestlabs/index_9.md","articles":[{"title":"9.1. Macの場合","level":"1.10.1","depth":2,"path":"devtestlabs/index_9_mac.md","ref":"devtestlabs/index_9_mac.md","articles":[]},{"title":"9.2. Windowsの場合","level":"1.10.2","depth":2,"path":"devtestlabs/index_9_windows.md","ref":"devtestlabs/index_9_windows.md","articles":[]}]},"previous":{"title":"7. Web Deployのインストール","level":"1.8","depth":1,"path":"devtestlabs/index_7.md","ref":"devtestlabs/index_7.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_8.md","mtime":"2020-10-01T18:26:17.400Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-01T20:00:51.219Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>6. IISの設定を行う · GitBook</title>
+        <title>6. .NET Coreのインストール · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -120,7 +120,7 @@
                 <a href="index_2.html">
             
                     
-                    2. ざっくりとした流れ
+                    2. DevTest Labs作成
             
                 </a>
             
@@ -133,7 +133,7 @@
                 <a href="index_3.html">
             
                     
-                    3. DevTest Labs作成
+                    3. DevTest LabsにVMを作成
             
                 </a>
             
@@ -146,7 +146,7 @@
                 <a href="index_4.html">
             
                     
-                    4. DevTest LabsにVMを作成
+                    4. VMに接続する
             
                 </a>
             
@@ -159,7 +159,7 @@
                 <a href="index_5.html">
             
                     
-                    5. VMに接続する
+                    5. IISの設定を行う
             
                 </a>
             
@@ -172,7 +172,7 @@
                 <a href="index_6.html">
             
                     
-                    6. IISの設定を行う
+                    6. .NET Coreのインストール
             
                 </a>
             
@@ -185,7 +185,7 @@
                 <a href="index_7.html">
             
                     
-                    7. .NET Coreのインストール
+                    7. Web Deployのインストール
             
                 </a>
             
@@ -198,7 +198,7 @@
                 <a href="index_8.html">
             
                     
-                    8. Web Deployのインストール
+                    8. VMのDNSを構成する
             
                 </a>
             
@@ -211,20 +211,7 @@
                 <a href="index_9.html">
             
                     
-                    9. VMのDNSを構成する
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11" data-path="index_10.html">
-            
-                <a href="index_10.html">
-            
-                    
-                    10. Blazor Serverアプリを作成する
+                    9. Blazor Serverアプリを作成する
             
                 </a>
             
@@ -233,12 +220,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1" data-path="index_10_mac.html">
+        <li class="chapter " data-level="1.10.1" data-path="index_9_mac.html">
             
-                <a href="index_10_mac.html">
+                <a href="index_9_mac.html">
             
                     
-                    10.1. Macの場合
+                    9.1. Macの場合
             
                 </a>
             
@@ -246,12 +233,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="index_10_windows.html">
+        <li class="chapter " data-level="1.10.2" data-path="index_9_windows.html">
             
-                <a href="index_10_windows.html">
+                <a href="index_9_windows.html">
             
                     
-                    10.2. Windowsの場合
+                    9.2. Windowsの場合
             
                 </a>
             
@@ -294,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >6. IISの設定を行う</a>
+        <a href=".." >6. .NET Coreのインストール</a>
     </h1>
 </div>
 
@@ -309,40 +296,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="6-iis&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3046;">6. IIS&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3046;</h1>
-<p>&#x3053;&#x308C;&#x3067;<strong>Windows Server(VM)</strong>&#x3078;&#x63A5;&#x7D9A;&#x3059;&#x308B;&#x4E8B;&#x304C;&#x51FA;&#x6765;&#x307E;&#x3057;&#x305F;&#xFF0E;Web&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#xFF0C;<strong>IIS</strong>&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
-<p><strong>Add roles and features</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/17.png" alt=""></p>
-<p>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30A6;&#x30A3;&#x30B6;&#x30FC;&#x30C9;&#x304C;&#x7ACB;&#x3061;&#x4E0A;&#x304C;&#x308B;&#x306E;&#x3067;&#xFF0C;&#x3053;&#x3053;&#x306F;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/18.png" alt=""></p>
-<p>&#x3053;&#x3053;&#x3082;&#x5909;&#x66F4;&#x305B;&#x305A;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/19.png" alt=""></p>
-<p>&#x3053;&#x3053;&#x3082;&#x5909;&#x66F4;&#x305B;&#x305A;&#xFF0C;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/20.png" alt=""></p>
-<p><strong>Selectr server roles</strong>&#x307E;&#x3067;&#x6765;&#x305F;&#x3089;<strong>Roles</strong>&#x5185;&#x306E;<code>Web Server(IIS)</code>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>
-&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x304C;&#xFF0C;<strong>Add Features</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;&#xFF08;&#x4EE5;&#x964D;&#x3082;&#x540C;&#x3058;&#x304F;&#xFF09;</p>
-<p><img src="img/21.png" alt=""></p>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x3068;&#x304A;&#x308A;&#xFF0C;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x6E08;&#x307F;&#x3068;&#x306A;&#x308C;&#x3070;OK&#x3067;&#x3059;&#x306E;&#x3067;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/22.png" alt=""></p>
-<p><strong>Features</strong>&#x306F;&#x5909;&#x66F4;&#x3057;&#x306A;&#x3044;&#x306E;&#x3067;&#xFF0C;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/23.png" alt=""></p>
-<p><strong>Web Server Role(IIS)</strong>&#x3082;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/24.png" alt=""></p>
-<p><strong>Role services</strong>&#x3067;&#x306F;<code>Management Service</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x6E08;&#x307F;&#x3068;&#x306A;&#x3063;&#x305F;&#x3089;<strong>Next</strong>&#x3067;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/25.png" alt=""></p>
-<p><strong>Install</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/26.png" alt=""></p>
-<p>Installation success&#x3068;&#x306A;&#x308C;&#x3070;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x5B8C;&#x4E86;&#x306A;&#x306E;&#x3067;<strong>Close</strong>&#x3067;&#x9589;&#x3058;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/27.png" alt=""></p>
-<p>Azure Portal&#x306B;&#x623B;&#x308A;&#xFF0C;&#x52D5;&#x4F5C;&#x3057;&#x3066;&#x3044;&#x308B;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x691C;&#x7D22;&#x3057;&#x305F;&#x3044;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3092;&#x5165;&#x529B;&#x3057;&#xFF0C;Virtual Machines&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/28.png" alt=""></p>
-<p>&#x5BFE;&#x8C61;&#x306E;VM&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;VM&#x306E;&#x6982;&#x8981;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x79FB;&#x52D5;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/29.png" alt=""></p>
-<p>&#x30D1;&#x30D7;&#x30EA;&#x30C3;&#x30AF;IP&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30D7;&#x30DC;&#x30FC;&#x30C9;&#x306B;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#xFF0C;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E;&#x5225;&#x30BF;&#x30D6;&#x306B;&#x8CBC;&#x308A;&#x4ED8;&#x3051;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/31.png" alt=""></p>
-<p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x753B;&#x9762;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308C;&#x3070;OK&#x3067;&#x3059;&#xFF0E;<br>
-&#x6B21;&#x306F;&#x518D;&#x5EA6;VM&#x306B;&#x63A5;&#x7D9A;&#x3057;&#xFF0C;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x7528;&#x306E;<code>.NET Core</code>&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/32.png" alt=""></p>
+                                <h1 id="6-net-core&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">6. <code>.NET Core</code>&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h1>
+<p>&#x518D;&#x3073;RDP&#x3067;<strong>Windows Server</strong>&#x3092;&#x64CD;&#x4F5C;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#xFF0E;<br>&#x4ECA;&#x56DE;&#x306F;<code>Blazor Server</code>&#x306E;&#x30A2;&#x30D7;&#x30EA;&#x3092;<strong>IIS</strong>&#x306B;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3082;&#x3089;&#x3046;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x305F;&#x3081;&#xFF0C;<code>.NET Core</code>&#x304C;&#x5FC5;&#x8981;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;<br>
+<strong>IE</strong>&#x3092;&#x958B;&#x304D;&#xFF0C;<strong>Internet options</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x304B;&#x3089;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3092;&#x884C;&#x3046;&#x306E;&#x3067;&#xFF0C;IE&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/33.png" alt=""></p>
+<p><strong>File downlod</strong>&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3092;<strong>Enable</strong>&#x306B;&#x3057;&#x307E;&#x3059;&#xFF0E;
+&#x8B66;&#x544A;&#x304C;&#x51FA;&#x307E;&#x3059;&#x304C;&#xFF0C;Yes&#x3092;&#x62BC;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#xFF0E;</p>
+<p><img src="img/35.png" alt=""> <img src="img/36.png" alt=""></p>
+<p><strong>Apply</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x305F;&#x5F8C;&#xFF0C;<strong>OK</strong>&#x3067;&#x9589;&#x3058;&#x3066;&#x4E0B;&#x3055;&#x3044;&#xFF0E;</p>
+<p><img src="img/37.png" alt=""></p>
+<p>IE&#x306B;<a href="https://dotnet.microsoft.com/download/dotnet-core/3.1" target="_blank">&#x3053;&#x3061;&#x3089;</a>&#x306E;URL&#x3092;&#x30B3;&#x30D4;&#x30DA;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#xFF0E;
+<code>.NET Core</code>&#x306E;Runtime&#x304C;&#x6848;&#x5185;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x753B;&#x9762;&#x306B;&#x306A;&#x308B;&#x306E;&#x3067;&#xFF0C;Windows&#x306E;<strong>Hosting Bundle</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/38.png" alt=""></p>
+<p>&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#xFF0C;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x307E;&#x3059;&#xFF0E;&#xFF08;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4FDD;&#x5B58;&#x5148;&#x306F;&#x4EFB;&#x610F;&#xFF09;</p>
+<p><img src="img/39.png" alt=""></p>
+<p>&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F;<code>dotnet-hosting-3.1.8-win.exe</code>&#x3092;&#x30C0;&#x30D6;&#x30EB;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3067;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x540C;&#x610F;&#x306E;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x5165;&#x308C;&#xFF0C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#xFF0E;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x3089;&#x9589;&#x3058;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+<p><img src="img/40.png" alt=""> <img src="img/41.png" alt=""></p>
 
                                 
                                 </section>
@@ -370,12 +339,12 @@
 
             
                 
-                <a href="index_5.html" class="navigation navigation-prev " aria-label="Previous page: 5. VMに接続する">
+                <a href="index_5.html" class="navigation navigation-prev " aria-label="Previous page: 5. IISの設定を行う">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="index_7.html" class="navigation navigation-next " aria-label="Next page: 7. .NET Coreのインストール">
+                <a href="index_7.html" class="navigation navigation-next " aria-label="Next page: 7. Web Deployのインストール">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -386,7 +355,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6. IISの設定を行う","level":"1.7","depth":1,"next":{"title":"7. .NET Coreのインストール","level":"1.8","depth":1,"path":"devtestlabs/index_7.md","ref":"devtestlabs/index_7.md","articles":[]},"previous":{"title":"5. VMに接続する","level":"1.6","depth":1,"path":"devtestlabs/index_5.md","ref":"devtestlabs/index_5.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_6.md","mtime":"2020-10-01T16:35:42.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-01T17:38:08.229Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. .NET Coreのインストール","level":"1.7","depth":1,"next":{"title":"7. Web Deployのインストール","level":"1.8","depth":1,"path":"devtestlabs/index_7.md","ref":"devtestlabs/index_7.md","articles":[]},"previous":{"title":"5. IISの設定を行う","level":"1.6","depth":1,"path":"devtestlabs/index_5.md","ref":"devtestlabs/index_5.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_6.md","mtime":"2020-10-01T19:00:11.338Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-01T20:00:51.219Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
