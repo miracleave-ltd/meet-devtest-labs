@@ -143,7 +143,7 @@ DevTest Labs内で**追加**をクリックします．
 
 ## 3.4. IISの設定を行う
 
-これでWindows Serverへ接続する事が出来ました．Webサーバーとして使用するために，**IIS**をインストールしていきます．
+これで**Windows Server(VM)**へ接続する事が出来ました．Webサーバーとして使用するために，**IIS**をインストールしていきます．
 
 **Add roles and features**をクリックします．
 
@@ -209,7 +209,7 @@ Azure Portalに戻り，動作しているか確認します．</br>検索した
 
 ## 3.5. .NET Coreのインストール
 
-再びRDPでWindows Serverを操作していきます．<br>今回は`Blazor Server`のアプリを**IIS**に実行してもらう必要があるため，`.NET Core`が必要となります．</br>
+再びRDPで**Windows Server(VM)**を操作していきます．<br>今回は`Blazor Server`のアプリを**IIS**に実行してもらう必要があるため，`.NET Core`が必要となります．</br>
 **IE**を開き，**Internet options**を選択します．</br>インターネットからファイルのダウンロードを行うので，IEの設定を変更します．
 
 ![](img/33.png)
@@ -259,12 +259,12 @@ IEに[こちら](https://dotnet.microsoft.com/download/dotnet-core/3.1)のURLを
 
 ## 3.7. VMのDNSを構成する
 
-Azure PortalからVirtual Machinesで作成したVMを選択し，DNS名の構成をクリック．
+**Azure Portal**から**Virtual Machines**で作成したVMを選択し，DNS名の構成をクリック．
 
 ![](img/49.png)
 
 
-Visual Studioから発行するときにDNSでアクセス出来ないと駄目なので，任意のDNS名を付けましょう．</br>**作成したVMのマシン名**がわかりやすくて良いと思います．変更したら**保存**をクリックします．</br>割り当ては動的としていますが，VMが再起動してもDNSで紐付くので問題ないです．
+**Visual Studio**から発行するときにDNSでアクセス出来ないと駄目なので，任意のDNS名を付けましょう．</br>**作成したVMのマシン名**がわかりやすくて良いと思います．変更したら**保存**をクリックします．</br>割り当ては動的としていますが，VMが再起動してもDNSで紐付くので問題ないです．
 
 ![](img/50.png)
 
@@ -274,14 +274,14 @@ Visual Studioから発行するときにDNSでアクセス出来ないと駄目�
 
 ### Macを使用している方
 
-Visual Studio for MacではAzure VMへWebデプロイの機能が追いついていないため，別の対応方法を記載しています．</br>
+**Visual Studio for Mac**では**Azure VM**へWebデプロイの機能が追いついていないため，別の対応方法を記載しています．</br>
 Windiowsは全てVisual Studioで完結しますが，Macは少し違う手法を取ります．
 
 プロジェクトの新規作成を選択します．
 
 ![](img/52_m.png)
 
-Blazor Serverを選択します．
+**Blazor Server**を選択します．
 
 ![](img/53_m.png)
 
@@ -305,7 +305,7 @@ Blazor Serverを選択します．
 
 ![](img/58_m.png)
 
-以下のフォルダをVM（Windows Server）へアタッチして，コピーしていきます．
+以下のフォルダを**Windows Server(VM)**へアタッチして，コピーしていきます．
 ![](img/59_m.png)
 
 
@@ -317,10 +317,10 @@ VMに接続するときに使用した`.rdp`ファイルを**Microsoft Remote De
 **[+]** ボタンをクリックして，Visual Studioで公開先で選択したフォルダを指定し，VMから誤ってファイルが削除されないように**Read-only**にチェックを付けます．
 ![](img/60_m.png)
 
-再びRDPに戻り，Server ManegerからIIS Managerを選択します．
+再び**Windows Server（VM）**に戻り，**Server Maneger**から**IIS Manager**を選択します．
 ![](img/65_m.png)
 
-Default Web Siteで**右クリック->Explore**を選択します．
+**Default Web Site**で**右クリック->Explore**を選択します．
 
 ![](img/63_m.png)
 
@@ -328,7 +328,7 @@ Macの**Microsoft Remote Desktop**で設定したフォルダがアタッチさ�
 
 ![](img/61_m.png)
 
-Windows Serverの`C:\inetpub\wwwroot`までエクスプローラーを開いて，上記手順で開いたMac内のファイルを全てコピーします．</br>これでデプロイが完了です．
+**Windows Server(VM)**の`C:\inetpub\wwwroot`までエクスプローラーを開いて，上記手順で開いたMac内のファイルを全てコピーします．</br>これでデプロイが完了です．
 早速Webページを開いてみましょう．
 
 ![](img/64_m.png)
