@@ -16,12 +16,12 @@
 
 ## 2. ざっくりとした流れ
 
-1. Azure devtest labs作る
-2. 匿名ユーザーでも招待出来るようにVM作成(windows server)
+1. Azure Dev Test Labs作成
+2. VM作成(Windows server)
 3. VMが出来たら，RDPで入る
-4. `IIS`インストール
+4. `IIS`をインストール
 5. `.NET Core`ホスティングバンドルのインストール
-6. ネットワークインターフェースとの関連付け
+6. `Web Deploy`のインストール
 7. Visual StudioからVMにBlazorアプリのデプロイ
    MacはローカルPCをVMへアタッチしてファイルを手動アップ
 8. ブラウザで動作確認
