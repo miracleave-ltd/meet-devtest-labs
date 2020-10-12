@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="index_12.html" />
+    
     
     <link rel="prev" href="index_10.html" />
     
@@ -275,6 +277,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.13" data-path="index_12.html">
+            
+                <a href="index_12.html">
+            
+                    
+                    12. VMの停止を行う
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -321,6 +336,100 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="11-&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F7F;&#x3044;vm&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">11. &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F7F;&#x3044;VM&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h1>
+<p>DevTest Labs&#x5185;&#x3067;<strong>&#x8FFD;&#x52A0;</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/95.png" alt=""></p>
+<p>&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x9078;&#x629E;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;<strong>&#x524D;&#x8FF0;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30A4;&#x30E1;&#x30FC;&#x30B8;</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/96.png" alt=""></p>
+<p>&#x9078;&#x629E;&#x3057;&#x305F;&#x3089;&#x4EE5;&#x4E0B;&#x306E;&#x3068;&#x304A;&#x308A;&#xFF0C;&#x57FA;&#x672C;&#x8A2D;&#x5B9A;&#x306E;&#x5165;&#x529B;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9805;&#x76EE;&#x540D;</th>
+<th style="text-align:left">&#x5165;&#x529B;&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x540D;</td>
+<td style="text-align:left">&#x547D;&#x540D;&#x306F;&#x81EA;&#x7531;&#x3067;&#x306F;&#x3042;&#x308A;&#x307E;&#x3059;&#x304C;&#xFF0C;<code>vm-mirameet-001</code>&#x3068;&#x3057;&#x307E;&#x3059;&#xFF0E;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;</td>
+<td style="text-align:left">&#x81EA;&#x7531;&#x5165;&#x529B;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4FDD;&#x5B58;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30B7;&#x30FC;&#x30AF;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x8A66;&#x7528;&#x3059;&#x308B;</td>
+<td style="text-align:left">&#x672A;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3068;&#x3057;&#x307E;&#x3059;&#xFF0E;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;</td>
+<td style="text-align:left">&#x81EA;&#x7531;&#x5165;&#x529B;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x898F;&#x5B9A;&#x306E;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3068;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3059;&#x308B;</td>
+<td style="text-align:left">&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x30B5;&#x30A4;&#x30BA;</td>
+<td style="text-align:left">&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306E;&#x307E;&#x307E;&#x3068;&#x3057;&#x307E;&#x3059;&#xFF0E;</td>
+</tr>
+<tr>
+<td style="text-align:left">OS&#x30C7;&#x30A3;&#x30B9;&#x30AF;&#x306E;&#x7A2E;&#x985E;</td>
+<td style="text-align:left">Standard HDD&#x3068;&#x3057;&#x307E;&#x3059;</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/97.png" alt=""></p>
+<p><strong>&#x8A73;&#x7D30;&#x8A2D;&#x5B9A;</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9805;&#x76EE;&#x540D;</th>
+<th style="text-align:left">&#x5165;&#x529B;&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x4EEE;&#x60F3;&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;</td>
+<td style="text-align:left">&#x81EA;&#x52D5;&#x3067;&#x9078;&#x629E;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#xFF0C;&#x305D;&#x306E;&#x307E;&#x307E;&#x3067;OK&#x3067;&#x3059;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x30FC;</td>
+<td style="text-align:left">&#x81EA;&#x52D5;&#x3067;&#x9078;&#x629E;&#x3055;&#x308C;&#x306E;&#x3067;&#xFF0C;&#x305D;&#x306E;&#x307E;&#x307E;&#x3067;OK&#x3067;&#x3059;</td>
+</tr>
+<tr>
+<td style="text-align:left">IP&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+<td style="text-align:left">&#x30D1;&#x30D7;&#x30EA;&#x30C3;&#x30AF;&#x306B;&#x3057;&#x307E;&#x3059;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x306E;&#x6709;&#x52B9;&#x671F;&#x9650;</td>
+<td style="text-align:left">&#x672A;&#x5165;&#x529B;&#x3067;OK&#x3067;&#x3059;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x3053;&#x306E;&#x30DE;&#x30B7;&#x30F3;&#x3092;&#x8981;&#x6C42;&#x53EF;&#x80FD;&#x306B;&#x3059;&#x308B;</td>
+<td style="text-align:left"><strong>&#x306F;&#x3044;</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x6570;</td>
+<td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/98.png" alt=""></p>
+<p>&#x5165;&#x529B;&#x3057;&#x305F;&#x3089;<strong>&#x57FA;&#x672C;&#x8A2D;&#x5B9A;</strong>&#x30BF;&#x30D6;&#x304B;&#x3089;<strong>OK</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;&#xFF08;&#x4F5C;&#x6210;&#x307E;&#x3067;&#x306B;10&#x5206;&#x307B;&#x3069;&#x5F85;&#x3061;&#x307E;&#x3059;&#xFF09;</p>
+<p>&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x3089;<strong>DevTest Lab</strong>&#x306E;<strong>&#x8981;&#x6C42;&#x53EF;&#x80FD;&#x306A;&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;<strong>&#x30DE;&#x30B7;&#x30F3;&#x306E;&#x8981;&#x6C42;</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/100.png" alt=""></p>
+<p>&#x8981;&#x6C42;&#x304C;&#x5B8C;&#x4E86;&#x3059;&#x308B;&#x3068;<strong>&#x81EA;&#x5206;&#x306E;&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;</strong>&#x306B;&#x79FB;&#x52D5;&#x3057;&#x307E;&#x3059;&#x306E;&#x3067;&#xFF0C;&#x4F5C;&#x6210;&#x3057;&#x305F;VM&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3068;VM&#x306E;&#x6982;&#x8981;&#x3078;&#x9077;&#x79FB;&#x51FA;&#x6765;&#x308B;&#x306E;&#x3067;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#xFF0E;
+<img src="img/101.png" alt=""></p>
+<p>IP&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x3092;&#x30D1;&#x30D6;&#x30EA;&#x30C3;&#x30AF;&#x306B;&#x3057;&#x305F;&#x306E;&#x3067;&#x30C9;&#x30E1;&#x30A4;&#x30F3;&#x304C;&#x632F;&#x3089;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;URL&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+<p><img src="img/102.png" alt=""></p>
+<p>&#x4E8B;&#x524D;&#x306B;&#x69CB;&#x7BC9;&#x3055;&#x308C;&#x305F;Web&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x8868;&#x793A;&#x304C;&#x78BA;&#x8A8D;&#x51FA;&#x6765;&#x307E;&#x3057;&#x305F;&#xFF0E;</p>
+<p><img src="img/103.png" alt=""></p>
+<h2 id="&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x304C;&#x4F5C;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;">&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x304C;&#x4F5C;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;</h2>
+<p>&#x6771;&#x65E5;&#x672C;&#x30EA;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306B;&#x5236;&#x9650;&#x304C;&#x3042;&#x308B;&#x5834;&#x5408;&#xFF0C;&#x4EE5;&#x4E0B;&#x306E;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3059;&#x308B;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/99.png" alt=""></p>
+<p>&#x3053;&#x306E;&#x5834;&#x5408;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3068;&#x304A;&#x308A;&#xFF0C;&#x5931;&#x6557;&#x3057;&#x305F;&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x3092;&#x524A;&#x9664;&#x3057;&#x305F;&#x5F8C;&#xFF0C;<strong>&#x5225;&#x306E;&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x30B5;&#x30A4;&#x30BA;</strong>&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;&#x518D;&#x5EA6;VM&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/99_2.png" alt=""></p>
 
                                 
                                 </section>
@@ -348,10 +457,14 @@
 
             
                 
-                <a href="index_10.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 10. DevTest Labsにカスタムイメージを追加する">
+                <a href="index_10.html" class="navigation navigation-prev " aria-label="Previous page: 10. DevTest Labsにカスタムイメージを追加する">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="index_12.html" class="navigation navigation-next " aria-label="Next page: 12. VMの停止を行う">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -360,7 +473,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"11. カスタムイメージを使いVMを作成する","level":"1.12","depth":1,"previous":{"title":"10. DevTest Labsにカスタムイメージを追加する","level":"1.11","depth":1,"path":"devtestlabs/index_10.md","ref":"devtestlabs/index_10.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_11.md","mtime":"2020-10-11T17:53:00.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-11T17:53:11.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"11. カスタムイメージを使いVMを作成する","level":"1.12","depth":1,"next":{"title":"12. VMの停止を行う","level":"1.13","depth":1,"path":"devtestlabs/index_12.md","ref":"devtestlabs/index_12.md","articles":[]},"previous":{"title":"10. DevTest Labsにカスタムイメージを追加する","level":"1.11","depth":1,"path":"devtestlabs/index_10.md","ref":"devtestlabs/index_10.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_11.md","mtime":"2020-10-12T01:31:00.006Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-12T01:46:18.606Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
