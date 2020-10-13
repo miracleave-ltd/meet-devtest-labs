@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>8. VMのDNSを構成する · GitBook</title>
+        <title>8.2. Windowsの場合 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -60,7 +60,7 @@
     <link rel="next" href="index_9.html" />
     
     
-    <link rel="prev" href="index_7.html" />
+    <link rel="prev" href="index_8_mac.html" />
     
 
     </head>
@@ -193,25 +193,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="index_8.html">
-            
-                <a href="index_8.html">
-            
-                    
-                    8. VMのDNSを構成する
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10" data-path="index_9.html">
+        <li class="chapter " data-level="1.9" data-path="index_9.html">
             
                 <a href="index_9.html">
             
                     
-                    9. Blazor Serverアプリを作成する
+                    8. Blazor Serverアプリを作成する
             
                 </a>
             
@@ -220,12 +207,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="index_9_mac.html">
+        <li class="chapter " data-level="1.9.1" data-path="index_8_mac.html">
             
-                <a href="index_9_mac.html">
+                <a href="index_8_mac.html">
             
                     
-                    9.1. Macの場合
+                    8.1. Macの場合
             
                 </a>
             
@@ -233,12 +220,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.2" data-path="index_9_windows.html">
+        <li class="chapter active" data-level="1.9.2" data-path="index_8_windows.html">
             
-                <a href="index_9_windows.html">
+                <a href="index_8_windows.html">
             
                     
-                    9.2. Windowsの場合
+                    8.2. Windowsの場合
             
                 </a>
             
@@ -251,12 +238,25 @@
             
         </li>
     
+        <li class="chapter " data-level="1.10" data-path="index_9.html">
+            
+                <a href="index_9.html">
+            
+                    
+                    9. DevTest Labsにカスタムイメージを追加する
+            
+                </a>
+            
+
+            
+        </li>
+    
         <li class="chapter " data-level="1.11" data-path="index_10.html">
             
                 <a href="index_10.html">
             
                     
-                    10. DevTest Labsにカスタムイメージを追加する
+                    10. カスタムイメージを使いVMを作成する
             
                 </a>
             
@@ -269,20 +269,7 @@
                 <a href="index_11.html">
             
                     
-                    11. カスタムイメージを使いVMを作成する
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.13" data-path="index_12.html">
-            
-                <a href="index_12.html">
-            
-                    
-                    12. VMの停止を行う
+                    11. VMの停止を行う
             
                 </a>
             
@@ -320,7 +307,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >8. VMのDNSを構成する</a>
+        <a href=".." >8.2. Windowsの場合</a>
     </h1>
 </div>
 
@@ -335,11 +322,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="8-vm&#x306E;dns&#x3092;&#x69CB;&#x6210;&#x3059;&#x308B;">8. VM&#x306E;DNS&#x3092;&#x69CB;&#x6210;&#x3059;&#x308B;</h1>
-<p><strong>Azure Portal</strong>&#x304B;&#x3089;<strong>Virtual Machines</strong>&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;VM&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;DNS&#x540D;&#x306E;&#x69CB;&#x6210;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#xFF0E;</p>
-<p><img src="img/49.png" alt=""></p>
-<p><strong>Visual Studio</strong>&#x304B;&#x3089;&#x767A;&#x884C;&#x3059;&#x308B;&#x3068;&#x304D;&#x306B;DNS&#x3067;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x51FA;&#x6765;&#x306A;&#x3044;&#x3068;&#x99C4;&#x76EE;&#x306A;&#x306E;&#x3067;&#xFF0C;&#x4EFB;&#x610F;&#x306E;DNS&#x540D;&#x3092;&#x4ED8;&#x3051;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;<br><strong>&#x4F5C;&#x6210;&#x3057;&#x305F;VM&#x306E;&#x30DE;&#x30B7;&#x30F3;&#x540D;</strong>&#x304C;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x304F;&#x3066;&#x826F;&#x3044;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#xFF0E;&#x5909;&#x66F4;&#x3057;&#x305F;&#x3089;<strong>&#x4FDD;&#x5B58;</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>&#x5272;&#x308A;&#x5F53;&#x3066;&#x306F;&#x52D5;&#x7684;&#x3068;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x304C;&#xFF0C;VM&#x304C;&#x518D;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x3082;DNS&#x3067;&#x7D10;&#x4ED8;&#x304F;&#x306E;&#x3067;&#x554F;&#x984C;&#x306A;&#x3044;&#x3067;&#x3059;&#xFF0E;</p>
-<p><img src="img/50.png" alt=""></p>
+                                <h1 id="82-windows&#x306E;&#x5834;&#x5408;">8.2. Windows&#x306E;&#x5834;&#x5408;</h1>
+<p>Visual Studio&#x3092;&#x958B;&#x3044;&#x3066;&#x65B0;&#x898F;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/62_w.png" alt=""></p>
+<p>Blazor&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<p><img src="img/52_w.png" alt=""></p>
+<p>&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x540D;&#x3084;&#x5834;&#x6240;&#x306F;&#x4EFB;&#x610F;&#x3067;&#x3059;&#xFF0E;</p>
+<p><img src="img/53_w.png" alt=""></p>
+<p>Blazor&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;&#x4ED6;&#x306F;&#x7279;&#x306B;&#x5909;&#x66F4;&#x305B;&#x305A;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/54_w.png" alt=""></p>
+<p>Visual Studio&#x4E0A;&#x306E;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x8A2D;&#x5B9A;&#x304B;&#x3089;&#x81EA;&#x8EAB;&#x306E;Azure&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+<p><img src="img/63_w.png" alt="">
+<img src="img/64_w.png" alt=""></p>
+<p>&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x3089;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x767A;&#x884C;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/55_w.png" alt=""></p>
+<p>Azure&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x6B21;&#x3078;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/56_w.png" alt=""></p>
+<p>Azure Virtual Machine&#x3092;&#x9078;&#x629E;&#x3057;&#xFF0C;&#x6B21;&#x3078;&#x9032;&#x307F;&#x307E;&#x3059;&#xFF0E;</p>
+<p><img src="img/57_w.png" alt=""></p>
+<p>&#x4F5C;&#x6210;&#x3057;&#x305F;Virtual Machine&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#xFF0C;&#x5B8C;&#x4E86;&#x3068;&#x3057;&#x307E;&#x3059;&#xFF0E;
+<img src="img/58_w.png" alt=""></p>
+<p>&#x516C;&#x958B;&#x7528;&#x306E;&#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x305F;&#x306E;&#x3067;&#xFF0C;<strong>&#x767A;&#x884C;</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;
+<img src="img/59_w.png" alt=""></p>
+<p>VM&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;OK&#xFF0C;&#x3068;&#x3059;&#x308B;&#x3068;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x304C;&#x59CB;&#x307E;&#x308A;&#x307E;&#x3059;&#xFF0E;
+<img src="img/60_w.png" alt=""></p>
+<p>&#x6B63;&#x5E38;&#x306B;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x304C;&#x5B8C;&#x4E86;&#x3059;&#x308B;&#x3068;&#x4EE5;&#x4E0B;&#x306E;&#x3068;&#x304A;&#x308A;&#xFF0C;Visual Studio&#x5185;&#x3067;&#x306E;&#x51FA;&#x529B;&#x304C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;
+<img src="img/65_w.png" alt=""></p>
+<p>&#x6B63;&#x5E38;&#x306B;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x3089;&#x65E9;&#x901F;Web&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x958B;&#x3044;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#xFF0E;</p>
+<p><img src="img/61_w.png" alt=""></p>
 
                                 
                                 </section>
@@ -367,12 +377,12 @@
 
             
                 
-                <a href="index_7.html" class="navigation navigation-prev " aria-label="Previous page: 7. Web Deployのインストール">
+                <a href="index_8_mac.html" class="navigation navigation-prev " aria-label="Previous page: 8.1. Macの場合">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="index_9.html" class="navigation navigation-next " aria-label="Next page: 9. Blazor Serverアプリを作成する">
+                <a href="index_9.html" class="navigation navigation-next " aria-label="Next page: 9. DevTest Labsにカスタムイメージを追加する">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -383,7 +393,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8. VMのDNSを構成する","level":"1.9","depth":1,"next":{"title":"9. Blazor Serverアプリを作成する","level":"1.10","depth":1,"path":"devtestlabs/index_9.md","ref":"devtestlabs/index_9.md","articles":[{"title":"9.1. Macの場合","level":"1.10.1","depth":2,"path":"devtestlabs/index_9_mac.md","ref":"devtestlabs/index_9_mac.md","articles":[]},{"title":"9.2. Windowsの場合","level":"1.10.2","depth":2,"path":"devtestlabs/index_9_windows.md","ref":"devtestlabs/index_9_windows.md","articles":[]}]},"previous":{"title":"7. Web Deployのインストール","level":"1.8","depth":1,"path":"devtestlabs/index_7.md","ref":"devtestlabs/index_7.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_8.md","mtime":"2020-10-01T18:26:17.400Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-12T01:46:18.606Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8.2. Windowsの場合","level":"1.9.2","depth":2,"next":{"title":"9. DevTest Labsにカスタムイメージを追加する","level":"1.10","depth":1,"path":"devtestlabs/index_9.md","ref":"devtestlabs/index_9.md","articles":[]},"previous":{"title":"8.1. Macの場合","level":"1.9.1","depth":2,"path":"devtestlabs/index_8_mac.md","ref":"devtestlabs/index_8_mac.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_8_windows.md","mtime":"2020-10-13T02:48:37.691Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-13T02:50:45.690Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
