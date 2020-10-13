@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>7. VMの停止を行う · GitBook</title>
+        <title>6. Blazor Serverアプリを作成する · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="index_8_mac.html" />
     
-    <link rel="prev" href="index_8_windows.html" />
+    
+    <link rel="prev" href="index_10.html" />
     
 
     </head>
@@ -165,7 +167,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="index_8.html">
+        <li class="chapter active" data-level="1.7" data-path="index_8.html">
             
                 <a href="index_8.html">
             
@@ -210,7 +212,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8" data-path="index_11.html">
+        <li class="chapter " data-level="1.8" data-path="index_11.html">
             
                 <a href="index_11.html">
             
@@ -324,7 +326,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >7. VMの停止を行う</a>
+        <a href=".." >6. Blazor Serverアプリを作成する</a>
     </h1>
 </div>
 
@@ -339,17 +341,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="11-vm&#x306E;&#x505C;&#x6B62;&#x3092;&#x884C;&#x3046;">11. VM&#x306E;&#x505C;&#x6B62;&#x3092;&#x884C;&#x3046;</h1>
-<p>&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;&#x306E;&#x6982;&#x8981;&#x306B;&#x3066;<strong>&#x958B;&#x653E;</strong>&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#xFF0E;
-&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x305F;&#x3089;&#x5DE6;&#x4E0A;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x3067;<strong>Devtest Labs</strong>&#x306B;&#x623B;&#x308A;&#x307E;&#x3059;&#xFF08;&#x3082;&#x3061;&#x308D;&#x3093;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x304B;&#x3089;&#x691C;&#x7D22;&#x3067;&#x3082;&#x53EF;&#xFF09;&#xFF0E;</p>
-<p><img src="img/104.png" alt=""></p>
-<p>&#x4E0A;&#x8A18;&#x306E;&#x64CD;&#x4F5C;&#x306B;&#x3066;<strong>&#x958B;&#x653E;</strong>&#x304C;&#x7D42;&#x4E86;&#x3059;&#x308B;&#x3068;<strong>&#x81EA;&#x5206;&#x306E;&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;</strong>&#x304B;&#x3089;&#x79FB;&#x52D5;&#x3057;&#xFF0C;&#x958B;&#x653E;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;
-&#x307E;&#x305F;&#xFF0C;<strong>&#x958B;&#x653E;</strong>&#x3055;&#x308C;&#x308B;&#x3068;VM&#x306F;&#x81EA;&#x52D5;&#x505C;&#x6B62;&#x3059;&#x308B;&#x306E;&#x3067;&#x5FF5;&#x306E;&#x70BA;&#xFF0C;VM&#x304C;&#x505C;&#x6B62;&#x3057;&#x3066;&#x3044;&#x308B;&#x304B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<p><img src="img/105.png" alt=""></p>
-<p><strong>&#x8981;&#x6C42;&#x53EF;&#x80FD;&#x306A;&#x4EEE;&#x60F3;&#x30DE;&#x30B7;&#x30F3;</strong>&#x306B;&#x79FB;&#x52D5;&#x3055;&#x308C;&#x305F;&#x304B;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#xFF0E;<strong>&#x8981;&#x6C42;</strong>&#x524D;&#x3068;&#x540C;&#x3058;&#x4F4D;&#x7F6E;&#x306B;VM&#x304C;&#x623B;&#x308A;&#x307E;&#x3057;&#x305F;&#xFF0E;</p>
-<p><img src="img/106.png" alt=""></p>
-<p><strong>&#x505C;&#x6B62;&#x6E08;&#x307F;&#xFF08;&#x5272;&#x308A;&#x5F53;&#x3066;&#x89E3;&#x9664;&#xFF09;</strong>&#x3068;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;OK&#x3067;&#x3059;&#xFF0E;</p>
-<p><img src="img/107.png" alt=""></p>
+                                <h1 id="8-visual-studio&#x3067;blazor-server&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">8. Visual Studio&#x3067;Blazor Server&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h1>
+<p>&#x3053;&#x3053;&#x3067;Windows&#x3068;Mac&#x3067;&#x624B;&#x9806;&#x304C;&#x5927;&#x304D;&#x304F;&#x5909;&#x308F;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#xFF0C;&#x81EA;&#x8EAB;&#x306E;&#x74B0;&#x5883;&#x306B;&#x5408;&#x308F;&#x305B;&#x3066;&#x8AAD;&#x307F;&#x9032;&#x3081;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<ul>
+<li><a href="devtestlabs/index_10_mac.md">10.1. Mac&#x306E;&#x5834;&#x5408;</a></li>
+<li><a href="devtestlabs/index_10_windows.md">10.2. Windows&#x306E;&#x5834;&#x5408;</a></li>
+</ul>
 
                                 
                                 </section>
@@ -377,10 +374,14 @@
 
             
                 
-                <a href="index_8_windows.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 6.2. Windowsの場合">
+                <a href="index_10.html" class="navigation navigation-prev " aria-label="Previous page: 5. カスタムイメージを使いVMを作成する">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="index_8_mac.html" class="navigation navigation-next " aria-label="Next page: 6.1. Macの場合">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -389,7 +390,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7. VMの停止を行う","level":"1.8","depth":1,"next":{"title":"TIPS","level":"1.9","depth":1,"ref":"","articles":[{"title":"ex-1. VMに接続する","level":"1.9.1","depth":2,"path":"devtestlabs/index_4.md","ref":"devtestlabs/index_4.md","articles":[]},{"title":"ex-2. IISの設定を行う","level":"1.9.2","depth":2,"path":"devtestlabs/index_5.md","ref":"devtestlabs/index_5.md","articles":[]},{"title":"ex-3. .NET Coreのインストール","level":"1.9.3","depth":2,"path":"devtestlabs/index_6.md","ref":"devtestlabs/index_6.md","articles":[]},{"title":"ex-4. Web Deployのインストール","level":"1.9.4","depth":2,"path":"devtestlabs/index_7.md","ref":"devtestlabs/index_7.md","articles":[]}]},"previous":{"title":"6.2. Windowsの場合","level":"1.7.2","depth":2,"path":"devtestlabs/index_8_windows.md","ref":"devtestlabs/index_8_windows.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_11.md","mtime":"2020-10-13T02:50:10.520Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-13T03:42:03.713Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. Blazor Serverアプリを作成する","level":"1.7","depth":1,"next":{"title":"6.1. Macの場合","level":"1.7.1","depth":2,"path":"devtestlabs/index_8_mac.md","ref":"devtestlabs/index_8_mac.md","articles":[]},"previous":{"title":"5. カスタムイメージを使いVMを作成する","level":"1.6","depth":1,"path":"devtestlabs/index_10.md","ref":"devtestlabs/index_10.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"devtestlabs/index_8.md","mtime":"2020-10-13T02:49:09.752Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-13T03:42:03.713Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
